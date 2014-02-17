@@ -2,7 +2,7 @@
 Emotional Maps
 
 ## Authors
-- Richard Armuelles, [Link](http://github.com/kurai021 "Github Account")
+- Richard Armuelles, [Github Account](http://github.com/kurai021 "Github Account")
 
 ## Description
 Emotional Maps, is an effort to map people according to their emotions, based on the content of their tweets (English only) in real time.
