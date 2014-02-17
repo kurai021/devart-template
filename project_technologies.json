@@ -1,16 +1,25 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "maps",
+            "twitter"
         ],
         "platforms": [
-            "insert platforms"
+            "linux",
+            "windows",
+            "osx",
+            "android",
+            "ios",
+            "firefox os"
         ],
         "toolkits": [
-            "insert toolkits"
+            "nodejs",
+            "angularjs"
         ]
     },
     "themes": [
-        "insert themes"
+        "maps",
+        "social",
+        "emotions"
     ]
 }
