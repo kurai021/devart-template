@@ -1,27 +1,26 @@
 {
     "technologies": {
         "apis": [
-            "Maps",
-            "Twitter"
+            "maps",
+            "web speech",
+            "twitter"
         ],
         "platforms": [
-            "Linux",
-            "Windows",
-            "OSX",
-            "Android",
-            "IOS",
-            "Firefox OS"
+            "linux",
+            "windows",
+            "osx",
+            "android",
+            "ios",
+            "firefox os"
         ],
         "toolkits": [
-            "Nodejs",
-            "Angularjs",
-            "HTML5",
-            "Stylus",
-            "JavaScript"
+            "nodejs",
+            "angularjs",
+            "stylus"
         ]
     },
     "themes": [
-        "mAaps",
+        "maps",
         "social",
         "emotions"
     ]
