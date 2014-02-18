@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body #map_canvas {
+  height: 100%;
+  width: 100%;
+}
+body #legend {
+  background: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #000;
+}
+body #legend h3 {
+  margin-top: 0;
+  text-align: center;
+}
+body #legend img {
+  vertical-align: middle;
+}
+body #legend #div1 {
+  overflow-y: scroll;
+  width: 200px;
+  height: 400px;
+}
+body #legend img {
+  width: 16px;
+  height: 25px;
+}
+#div1.infowindow {
+  background-color: #373737;
+}
+.gm-style-iw {
+  color: #bbb;
+  max-width: 200px;
+}
+.displaypic {
+  vertical-align: middle;
+}
