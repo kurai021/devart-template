@@ -15,9 +15,7 @@
         "toolkits": [
             "nodejs",
             "angularjs",
-            "html5",
-            "stylus",
-            "javascript"
+            "stylus"
         ]
     },
     "themes": [
