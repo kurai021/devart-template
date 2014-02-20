@@ -29,8 +29,80 @@ body #legend #div1 {
   height: 400px;
 }
 body #legend img {
-  width: 16px;
+  width: 25px;
   height: 25px;
+}
+body #legend #strong_excitement {
+  color: #dbc600;
+}
+body #legend #strong_happiness {
+  color: #ece12b;
+}
+body #legend #strong_serenity {
+  color: #effc64;
+}
+body #legend #strong_alertness {
+  color: #d85f00;
+}
+body #legend #strong_anticipation {
+  color: #e58b1e;
+}
+body #legend #strong_interest {
+  color: #efb151;
+}
+body #legend #strong_anger {
+  color: #ca0e37;
+}
+body #legend #strong_annoyance {
+  color: #d80440;
+}
+body #legend #strong_nuisance {
+  color: #e14856;
+}
+body #legend #strong_abhorrence {
+  color: #700d93;
+}
+body #legend #strong_disgust {
+  color: #944ead;
+}
+body #legend #strong_pain {
+  color: #b079c0;
+}
+body #legend #strong_boredom {
+  color: #3c499a;
+}
+body #legend #strong_sadness {
+  color: #6c81bc;
+}
+body #legend #strong_pensive {
+  color: #9aa7d0;
+}
+body #legend #strong_amazed {
+  color: #38649a;
+}
+body #legend #strong_surprised {
+  color: #4b8fb3;
+}
+body #legend #strong_distracted {
+  color: #83b7cb;
+}
+body #legend #strong_terrified {
+  color: #107221;
+}
+body #legend #strong_fear {
+  color: #1d9f38;
+}
+body #legend #strong_apprehension {
+  color: #5bc15f;
+}
+body #legend #strong_admiration {
+  color: #5ac000;
+}
+body #legend #strong_confident {
+  color: #75d500;
+}
+body #legend #strong_acceptance {
+  color: #a9e942;
 }
 #div1.infowindow {
   background-color: #373737;
