@@ -31,6 +31,21 @@
     access_token_key: '305235468-lRZ5wxlpjARUuLYfyXUerCrkM1dWZLQ1fkEfHKeg',
     access_token_secret: 'YdDW69LKe1JnyY1uCPLjPuR3IifFXHZTO0RI7Q0bNw6MR'
   });
+    
+    io.configure('production', function(){
+        console.log("set config for production");
+        io.enable('browser client minification');  // send minified client
+        io.enable('browser client etag');          // apply etag caching logic based on version number
+        io.enable('browser client gzip');          // gzip the file
+        io.set('log level', 1);                    // reduce logging
+        io.set('transports', [                     // enable all transports (optional if you want flashsocket)
+            'websocket'
+          , 'flashsocket'
+          , 'htmlfile'
+          , 'xhr-polling'
+          , 'jsonp-polling'
+        ]);
+      });
 
   io.sockets.on("connection", function(socket) {
     twit.stream("statuses/filter", {

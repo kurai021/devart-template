@@ -1,8 +1,9 @@
 var map
 function initialize() {
+    
         var mapOptions = {
           center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 7,
+          zoom: 5,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           styles: [
     {
@@ -124,8 +125,7 @@ function initialize() {
 ]
         };
         
-        map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
+        map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
     
         var legend = document.getElementById('legend');
         var div1 = document.createElement('div');
