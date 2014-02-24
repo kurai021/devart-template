@@ -66,13 +66,16 @@ $(function(){
         var myLatLng = new google.maps.LatLng(lat,lng);
         var marker = new google.maps.Marker({
             position: myLatLng,
-            animation: google.maps.Animation.BOUNCE,
             map: map
         });
             
         if (/excitement/.test(tweetText) || /excited/.test(tweetText) || /Excitement/.test(tweetText) || /Excited/.test(tweetText) || /EXCITEMENT/.test(tweetText) || /EXCITED/.test(tweetText)){
             var iconFile = '/images/markers/excitement.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_excitement.getPath();
+            path.push(myLatLng);
+            
             counter_excitement++;
             excitement.innerHTML = counter_excitement;
         }
@@ -80,6 +83,10 @@ $(function(){
         if (/happiness/.test(tweetText) || /happy/.test(tweetText) || /Happy/.test(tweetText) || /Happiness/.test(tweetText) || /HAPPY/.test(tweetText) || /HAPPINESS/.test(tweetText)){
             var iconFile = '/images/markers/happiness.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_happiness.getPath();
+            path.push(myLatLng);
+            
             counter_happiness++;
             happiness.innerHTML = counter_happiness;
         }
@@ -87,6 +94,10 @@ $(function(){
         if (/serenity/.test(tweetText) || /serene/.test(tweetText) || /calm/.test(tweetText) || /Serenity/.test(tweetText) || /Serene/.test(tweetText) || /Calm/.test(tweetText) || /SERENITY/.test(tweetText) || /SERENE/.test(tweetText) || /CALM/.test(tweetText)){
             var iconFile = '/images/markers/serenity.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_serenity.getPath();
+            path.push(myLatLng);
+            
             counter_serenity++;
             serenity.innerHTML = counter_serenity;
         }  
@@ -94,6 +105,10 @@ $(function(){
         if (/alertness/.test(tweetText) || /alert/.test(tweetText) || /Alertness/.test(tweetText) || /Alert/.test(tweetText) || /ALERTNESS/.test(tweetText) || /ALERT/.test(tweetText)){
             var iconFile = '/images/markers/alertness.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_alertness.getPath();
+            path.push(myLatLng);
+            
             counter_alertness++;
             alertness.innerHTML = counter_alertness;
         }
@@ -101,6 +116,10 @@ $(function(){
         if (/anticipation/.test(tweetText) || /anticipate/.test(tweetText) || /anticipated/.test(tweetText) || /Anticipation/.test(tweetText) || /Anticipate/.test(tweetText) || /Anticipated/.test(tweetText) || /ANTICIPATION/.test(tweetText) || /ANTICIPATE/.test(tweetText) || /ANTICIPATED/.test(tweetText)){
             var iconFile = '/images/markers/anticipation.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_anticipation.getPath();
+            path.push(myLatLng);
+            
             counter_anticipation++;
             anticipation.innerHTML = counter_anticipation;
         }
@@ -108,6 +127,10 @@ $(function(){
         if (/interest/.test(tweetText) || /interesting/.test(tweetText)){
             var iconFile = '/images/markers/interest.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_interest.getPath();
+            path.push(myLatLng);
+            
             counter_interest++;
             interest.innerHTML = counter_interest;
         }
@@ -115,6 +138,10 @@ $(function(){
         if (/anger/.test(tweetText) || /angry/.test(tweetText) || /Anger/.test(tweetText) || /Angry/.test(tweetText) || /ANGER/.test(tweetText) || /ANGRY/.test(tweetText)){
             var iconFile = '/images/markers/anger.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_anger.getPath();
+            path.push(myLatLng);
+            
             counter_anger++;
             anger.innerHTML = counter_anger;
         }
@@ -122,20 +149,32 @@ $(function(){
         if (/annoyance/.test(tweetText) || /annoyed/.test(tweetText) || /annoying/.test(tweetText) || /Annoyance/.test(tweetText) || /Annoyed/.test(tweetText) || /Annoying/.test(tweetText) || /ANNOYANCE/.test(tweetText) || /ANNOYED/.test(tweetText) || /ANNOYING/.test(tweetText)){
             var iconFile = '/images/markers/annoyance.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_annoyance.getPath();
+            path.push(myLatLng);
+            
             counter_annoyance++;
             annoyance.innerHTML = counter_annoyance;
         }
         
-        if (/nuisance/.test(tweetText) || /Nuisance/.test(tweetText) || /NUISANCE/.test(tweetText)){
+        if (/nuisance/.test(tweetText) || /Nuisance/.test(tweetText) || /NUISANCE/.test(tweetText) || /hasle/.test(tweetText) || /Hasle/.test(tweetText) || /HASLE/.test(tweetText) || /DISCOMFORT/.test(tweetText) || /discomfort/.test(tweetText) || /Discomfort/.test(tweetText)){
             var iconFile = '/images/markers/nuisance.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_nuisance.getPath();
+            path.push(myLatLng);
+            
             counter_nuisance++;
             nuisance.innerHTML = counter_nuisance;
         }
         
-        if (/abhorrence/.test(tweetText) || /Abhorrence/.test(tweetText) || /ABHORRENCE/.test(tweetText)){
+        if (/abhorrence/.test(tweetText) || /Abhorrence/.test(tweetText) || /ABHORRENCE/.test(tweetText) || /hate/.test(tweetText) || /Hate/.test(tweetText) || /HATE/.test(tweetText)){
             var iconFile = '/images/markers/abhorrence.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_abhorrence.getPath();
+            path.push(myLatLng);
+            
             counter_abhorrence++;
             abhorrence.innerHTML = counter_abhorrence;
         }
@@ -143,6 +182,10 @@ $(function(){
         if (/pain/.test(tweetText) || /painful/.test(tweetText) || /Pain/.test(tweetText) || /Painful/.test(tweetText) || /PAIN/.test(tweetText) || /PAINFUL/.test(tweetText)){
             var iconFile = '/images/markers/pain.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_pain.getPath();
+            path.push(myLatLng);
+            
             counter_pain++;
             pain.innerHTML = counter_pain;
         }
@@ -150,6 +193,10 @@ $(function(){
         if (/boredom/.test(tweetText) || /boring/.test(tweetText) || /Boredom/.test(tweetText) || /Boring/.test(tweetText) || /BOREDOM/.test(tweetText) || /BORING/.test(tweetText)){
             var iconFile = '/images/markers/boredom.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_boredom.getPath();
+            path.push(myLatLng);
+            
             counter_boredom++;
             boredom.innerHTML = counter_boredom;
         }
@@ -157,6 +204,10 @@ $(function(){
         if (/sadness/.test(tweetText) || /sad/.test(tweetText) || /Sadness/.test(tweetText) || /Sad/.test(tweetText) || /SADNESS/.test(tweetText) || /SAD/.test(tweetText)){
             var iconFile = '/images/markers/sadness.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_sadness.getPath();
+            path.push(myLatLng);
+            
             counter_sadness++;
             sadness.innerHTML = counter_sadness;
         }
@@ -164,6 +215,10 @@ $(function(){
         if (/pensive/.test(tweetText) || /thoughtful/.test(tweetText) || /guess/.test(tweetText) || /Pensive/.test(tweetText) || /Thoughtful/.test(tweetText) || /Guess/.test(tweetText) || /PENSIVE/.test(tweetText) || /THOUGHTFUL/.test(tweetText) || /GUESS/.test(tweetText)){
             var iconFile = '/images/markers/pensive.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_pensive.getPath();
+            path.push(myLatLng);
+            
             counter_pensive++;
             pensive.innerHTML = counter_pensive;
         }
@@ -171,6 +226,10 @@ $(function(){
         if (/amazed/.test(tweetText) || /amazing/.test(tweetText) || /Amazed/.test(tweetText) || /Amazing/.test(tweetText) || /AMAZED/.test(tweetText) || /AMAZING/.test(tweetText)){
             var iconFile = '/images/markers/amazed.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_amazed.getPath();
+            path.push(myLatLng);
+            
             counter_amazed++;
             amazed.innerHTML = counter_amazed;
         }
@@ -178,6 +237,10 @@ $(function(){
         if (/surprised/.test(tweetText) || /surprise/.test(tweetText) || /Surprised/.test(tweetText) || /Surprise/.test(tweetText) || /SURPRISED/.test(tweetText) || /SURPRISE/.test(tweetText)){
             var iconFile = '/images/markers/surprised.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_surprised.getPath();
+            path.push(myLatLng);
+            
             counter_surprised++;
             surprised.innerHTML = counter_surprised;
         }
@@ -185,6 +248,10 @@ $(function(){
         if (/distracted/.test(tweetText) || /distraction/.test(tweetText) || /Distracted/.test(tweetText) || /Distraction/.test(tweetText) || /DISTRACTED/.test(tweetText) || /DISTRACTION/.test(tweetText)){
             var iconFile = '/images/markers/distracted.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_distracted.getPath();
+            path.push(myLatLng);
+            
             counter_distracted++;
             distracted.innerHTML = counter_distracted;
         }
@@ -192,6 +259,10 @@ $(function(){
         if (/terrified/.test(tweetText) || /Terrified/.test(tweetText) || /TERRIFIED/.test(tweetText)){
             var iconFile = '/images/markers/terrified.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_terrified.getPath();
+            path.push(myLatLng);
+            
             counter_terrified++;
             terrified.innerHTML = counter_terrified;
         }
@@ -199,6 +270,10 @@ $(function(){
         if (/fear/.test(tweetText) || /Fear/.test(tweetText) || /FEAR/.test(tweetText)){
             var iconFile = '/images/markers/fear.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_fear.getPath();
+            path.push(myLatLng);
+            
             counter_fear++;
             fear.innerHTML = counter_fear;
         }
@@ -206,6 +281,10 @@ $(function(){
         if (/apprehension/.test(tweetText) || /apprehensive/.test(tweetText) || /Apprehension/.test(tweetText) || /Apprehensive/.test(tweetText) || /APPREHENSION/.test(tweetText) || /APPREHENVISE/.test(tweetText)){
             var iconFile = '/images/markers/apprehension.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_apprehension.getPath();
+            path.push(myLatLng);
+            
             counter_apprehension++;
             apprehension.innerHTML = counter_apprehension;
         }
@@ -213,6 +292,10 @@ $(function(){
         if (/admiration/.test(tweetText) || /admire/.test(tweetText) || /Admiration/.test(tweetText) || /Admire/.test(tweetText) || /ADMIRATION/.test(tweetText) || /ADMIRE/.test(tweetText)){
             var iconFile = '/images/markers/admiration.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_admiration.getPath();
+            path.push(myLatLng);
+            
             counter_admiration++;
             admiration.innerHTML = counter_admiration;
         }
@@ -220,6 +303,10 @@ $(function(){
         if (/confident/.test(tweetText) || /confide/.test(tweetText) || /trust/.test(tweetText) || /Confident/.test(tweetText) || /Confide/.test(tweetText) || /Trust/.test(tweetText) || /CONFIDENT/.test(tweetText) || /CONFIDE/.test(tweetText) || /TRUST/.test(tweetText)){
             var iconFile = '/images/markers/confident.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_confident.getPath();
+            path.push(myLatLng);
+            
             counter_confident++;
             confident.innerHTML = counter_confident;
         }
@@ -227,6 +314,10 @@ $(function(){
         if (/acceptance/.test(tweetText) || /accept/.test(tweetText) || /Acceptance/.test(tweetText) || /Accept/.test(tweetText) || /ACCEPTANCE/.test(tweetText) || /ACCEPT/.test(tweetText)){
             var iconFile = '/images/markers/acceptance.png';
             marker.setIcon(iconFile)
+            
+            var path = poly_acceptance.getPath();
+            path.push(myLatLng);
+            
             counter_acceptance++;
             acceptance.innerHTML = counter_acceptance;
         }
