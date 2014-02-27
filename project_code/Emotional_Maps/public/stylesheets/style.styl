@@ -12,7 +12,7 @@ body
     #legend
         background #F2F2F2
         padding 10px
-        margin 10px
+        margin 5px
         border 3px solid #000
         h3
             margin-top 0
@@ -21,8 +21,20 @@ body
             vertical-align middle
         #div1
             overflow-y scroll
-            width 200px
-            height 400px
+            width 40vw
+            height 50vh
+            @media screen and (min-width: 360px)
+                width 30vw
+            @media screen and (min-width: 480px)
+                width 25vw
+            @media screen and (min-width: 640px)
+                width 20vw
+            @media screen and (min-width: 768px)
+                width 15vw
+            @media screen and (min-width: 1024px)
+                width 15vw
+            @media screen and (min-width: 1280px)
+                width 10vw
         img
             width 25px
             height 25px

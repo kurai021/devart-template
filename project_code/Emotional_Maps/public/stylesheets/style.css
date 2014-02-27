@@ -16,7 +16,7 @@ body #no-has-user-media {
 body #legend {
   background: #f2f2f2;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   border: 3px solid #000;
 }
 body #legend h3 {
@@ -28,8 +28,38 @@ body #legend img {
 }
 body #legend #div1 {
   overflow-y: scroll;
-  width: 200px;
-  height: 400px;
+  width: 40vw;
+  height: 50vh;
+}
+@media screen and (min-width: 360px) {
+  body #legend #div1 {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 480px) {
+  body #legend #div1 {
+    width: 25vw;
+  }
+}
+@media screen and (min-width: 640px) {
+  body #legend #div1 {
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  body #legend #div1 {
+    width: 15vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body #legend #div1 {
+    width: 15vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body #legend #div1 {
+    width: 10vw;
+  }
 }
 body #legend img {
   width: 25px;
