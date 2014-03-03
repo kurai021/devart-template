@@ -10,8 +10,8 @@ body #map_canvas {
   height: 100%;
   width: 100%;
 }
-body #no-has-user-media {
-  style: none;
+body canvas.div {
+  background-color: #aaa;
 }
 body #legend {
   background: #f2f2f2;
@@ -136,10 +136,6 @@ body #legend #strong_confident {
 }
 body #legend #strong_acceptance {
   color: #a9e942;
-}
-#div1.infowindow {
-  background-color: #373737;
-  opacity: 0.3;
 }
 .gm-style-iw {
   color: #bbb;

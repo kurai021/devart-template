@@ -36,7 +36,7 @@ $(function(){
         var name = data.user.name;
         var screen_name = data.user.screen_name;
         var tweetText = data.text;
-        var displayPicture = data.user.profile_image_url_https;
+        var displayPicture = data.user.profile_image_url;
         
         var excitement = document.getElementById("strong_excitement");
         var happiness = document.getElementById("strong_happiness");
@@ -322,11 +322,12 @@ $(function(){
             acceptance.innerHTML = counter_acceptance;
         }
         
-        /*
+
         //crea un infowindow con el contenido del tweet
         var contentString = "<img class='displaypic' src='" + displayPicture + "'><strong>@" + screen_name + "</strong>: " + "<p class='tweetText'>" + tweetText + "</p>";
+        
         //asigna contenido al infowindow
-        var infowindow = new google.maps.InfoWindow({
+        /*var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
         

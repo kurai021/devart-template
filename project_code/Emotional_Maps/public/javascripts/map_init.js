@@ -30,6 +30,7 @@ function initialize() {
           center: new google.maps.LatLng(-34.397, 150.644),
           zoom: 5,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
+          disableDefaultUI: true,
           styles: [
     {
         "featureType": "landscape",
