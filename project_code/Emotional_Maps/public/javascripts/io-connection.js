@@ -10,7 +10,7 @@ $(function(){
     var counter_interest = 0;
     var counter_anger = 0;
     var counter_annoyance = 0;
-    var counter_nuisance = 0;
+    var counter_hasle = 0;
     var counter_abhorrence = 0;
     var counter_disgust = 0;
     var counter_pain = 0;
@@ -46,7 +46,7 @@ $(function(){
         var interest = document.getElementById("strong_interest");
         var anger = document.getElementById("strong_anger");
         var annoyance = document.getElementById("strong_annoyance");
-        var nuisance = document.getElementById("strong_nuisance");
+        var hasle = document.getElementById("strong_hasle");
         var abhorrence = document.getElementById("strong_abhorrence");
         var disgust = document.getElementById("strong_disgust");
         var pain = document.getElementById("strong_pain");
@@ -157,15 +157,15 @@ $(function(){
             annoyance.innerHTML = counter_annoyance;
         }
         
-        if (/nuisance/.test(tweetText) || /Nuisance/.test(tweetText) || /NUISANCE/.test(tweetText) || /hasle/.test(tweetText) || /Hasle/.test(tweetText) || /HASLE/.test(tweetText) || /DISCOMFORT/.test(tweetText) || /discomfort/.test(tweetText) || /Discomfort/.test(tweetText)){
-            var iconFile = '/images/markers/nuisance.png';
+        if (/hasle/.test(tweetText) || /Hasle/.test(tweetText) || /HASLE/.test(tweetText) || /DISCOMFORT/.test(tweetText) || /discomfort/.test(tweetText) || /Discomfort/.test(tweetText)){
+            var iconFile = '/images/markers/hasle.png';
             marker.setIcon(iconFile)
             
-            var path = poly_nuisance.getPath();
+            var path = poly_hasle.getPath();
             path.push(myLatLng);
             
-            counter_nuisance++;
-            nuisance.innerHTML = counter_nuisance;
+            counter_hasle++;
+            hasle.innerHTML = counter_hasle;
         }
         
         if (/abhorrence/.test(tweetText) || /Abhorrence/.test(tweetText) || /ABHORRENCE/.test(tweetText) || /hate/.test(tweetText) || /Hate/.test(tweetText) || /HATE/.test(tweetText)){
@@ -245,7 +245,7 @@ $(function(){
             surprised.innerHTML = counter_surprised;
         }
         
-        if (/distracted/.test(tweetText) || /distraction/.test(tweetText) || /Distracted/.test(tweetText) || /Distraction/.test(tweetText) || /DISTRACTED/.test(tweetText) || /DISTRACTION/.test(tweetText)){
+        if (/distracted/.test(tweetText) || /distraction/.test(tweetText) || /Distracted/.test(tweetText) || /Distraction/.test(tweetText) || /DISTRACTED/.test(tweetText) || /DISTRACTION/.test(tweetText) || /DISTRACT/.test(tweetText) || /Distract/.test(tweetText) || /distract/.test(tweetText)){
             var iconFile = '/images/markers/distracted.png';
             marker.setIcon(iconFile)
             
@@ -256,7 +256,7 @@ $(function(){
             distracted.innerHTML = counter_distracted;
         }
         
-        if (/terrified/.test(tweetText) || /Terrified/.test(tweetText) || /TERRIFIED/.test(tweetText)){
+        if (/terrified/.test(tweetText) || /Terrified/.test(tweetText) || /TERRIFIED/.test(tweetText) || /terrifying/.test(tweetText) || /Terrifying/.test(tweetText) || /TERRIFYING/.test(tweetText)){
             var iconFile = '/images/markers/terrified.png';
             marker.setIcon(iconFile)
             

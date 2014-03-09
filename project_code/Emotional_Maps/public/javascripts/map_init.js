@@ -6,7 +6,7 @@ var poly_anticipation;
 var poly_interest;
 var poly_anger;
 var poly_annoyance;
-var poly_nuisance;
+var poly_hasle;
 var poly_abhorrence;
 var poly_disgust;
 var poly_pain;
@@ -111,14 +111,14 @@ function initialize() {
     poly_annoyance = new google.maps.Polyline(polyOptions_annoyance);
     poly_annoyance.setMap(map);
     
-    var polyOptions_nuisance = {
+    var polyOptions_hasle = {
         strokeColor: '#E14856',
         strokeOpacity: 0.5,
         geodesic: true,
         strokeWeight: 2
     };
-    poly_nuisance = new google.maps.Polyline(polyOptions_nuisance);
-    poly_nuisance.setMap(map);
+    poly_hasle = new google.maps.Polyline(polyOptions_hasle);
+    poly_hasle.setMap(map);
     
     var polyOptions_abhorrence = {
         strokeColor: '#700D93',
@@ -266,7 +266,7 @@ function initialize() {
 '<img src="/images/interest.png"> ' + '<strong>Interest </strong>'+ '<strong id="strong_interest">' + '</strong>' + '<br>' + '<br>' +
 '<img src="/images/anger.png"> ' + '<strong>Anger </strong>'+ '<strong id="strong_anger">' + '</strong>' + '<br>' + '<br>' +
 '<img src="/images/annoyance.png"> ' + '<strong>Annoyance </strong>'+ '<strong id="strong_annoyance">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/nuisance.png"> ' + '<strong>Nuisance </strong>'+ '<strong id="strong_nuisance">' + '</strong>' + '<br>' + '<br>' +
+'<img src="/images/hasle.png"> ' + '<strong>Hasle </strong>'+ '<strong id="strong_hasle">' + '</strong>' + '<br>' + '<br>' +
 '<img src="/images/abhorrence.png"> ' + '<strong>Abhorrence </strong>'+ '<strong id="strong_abhorrence">' + '</strong>' + '<br>' + '<br>' +
 '<img src="/images/disgust.png"> ' + '<strong>Disgust </strong>'+ '<strong id="strong_disgust">' + '</strong>' + '<br>' + '<br>' +
 '<img src="/images/pain.png"> ' + '<strong>Pain </strong>'+ '<strong id="strong_pain">' + '</strong>' + '<br>' + '<br>' +
