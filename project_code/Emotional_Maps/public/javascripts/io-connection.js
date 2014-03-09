@@ -324,15 +324,10 @@ $(function(){
         
 
         //crea un infowindow con el contenido del tweet
-        var contentString = "<img class='displaypic' src='" + displayPicture + "'><strong>@" + screen_name + "</strong>: " + "<p class='tweetText'>" + tweetText + "</p>";
+        var contentString = "<img class='displaypic' src='" + displayPicture + "'><strong>@" + screen_name + "</strong>: " + "<span class='tweetText'>" + tweetText + "</span>";
         
-        //asigna contenido al infowindow
-        /*var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-        
-        //abre el tweet en el infowindow
-        infowindow.open(map, marker);*/
+        tw = document.getElementById("tweets");
+        tw.innerHTML = "<div class='tweet'><div class='message'>" + contentString + '</div></div>';
         
         //mueve el mapa para enfocar al proximo tweet
         var newFocus = new google.maps.LatLng(lat,lng);

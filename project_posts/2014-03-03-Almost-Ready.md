@@ -1,1 +1,1 @@
-![Image1](../project_images/cover.jpg?raw=true "Image1")
+![Image1](../project_images/almost-ready.png?raw=true "Image1")
