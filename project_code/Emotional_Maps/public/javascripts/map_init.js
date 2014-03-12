@@ -258,30 +258,7 @@ function initialize() {
         var div1 = document.createElement('div');
         div1.setAttribute("id", "div1");
     
-        div1.innerHTML = '<img src="/images/excitement.png"> ' + '<strong>Excitement </strong>' + '<strong id="strong_excitement">' + '</strong>' +'<br>' + '<br>' + 
-'<img src="/images/happiness.png"> ' + '<strong>Happiness </strong>' + '<strong id="strong_happiness">'+ '</strong>' +'<br>' + '<br>' + 
-'<img src="/images/serenity.png"> ' + '<strong>Serenity </strong>' + '<strong id="strong_serenity">' + '</strong>' + '<br>' + '<br>' + 
-'<img src="/images/alertness.png"> ' + '<strong>Alertness </strong>' + '<strong id="strong_alertness">' + '</strong>' +'<br>' + '<br>' + 
-'<img src="/images/anticipation.png"> ' + '<strong>Anticipation </strong>' + '<strong id="strong_anticipation">' + '</strong>' +'<br>' + '<br>' + 
-'<img src="/images/interest.png"> ' + '<strong>Interest </strong>'+ '<strong id="strong_interest">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/anger.png"> ' + '<strong>Anger </strong>'+ '<strong id="strong_anger">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/annoyance.png"> ' + '<strong>Annoyance </strong>'+ '<strong id="strong_annoyance">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/hasle.png"> ' + '<strong>Hasle </strong>'+ '<strong id="strong_hasle">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/abhorrence.png"> ' + '<strong>Abhorrence </strong>'+ '<strong id="strong_abhorrence">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/disgust.png"> ' + '<strong>Disgust </strong>'+ '<strong id="strong_disgust">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/pain.png"> ' + '<strong>Pain </strong>'+ '<strong id="strong_pain">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/boredom.png"> ' + '<strong>Boredom </strong>'+ '<strong id="strong_boredom">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/sadness.png"> ' + '<strong>Sadness </strong>'+ '<strong id="strong_sadness">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/pensive.png"> ' + '<strong>Pensive </strong>'+ '<strong id="strong_pensive">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/amazed.png"> ' + '<strong>Amazed </strong>'+ '<strong id="strong_amazed">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/surprised.png"> ' + '<strong>Surprised </strong>'+ '<strong id="strong_surprised">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/distracted.png"> ' + '<strong>Distracted </strong>'+ '<strong id="strong_distracted">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/terrified.png"> ' + '<strong>Terrified </strong>'+ '<strong id="strong_terrified">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/fear.png"> ' + '<strong>Fear </strong>'+ '<strong id="strong_fear">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/apprehension.png"> ' + '<strong>Apprehension </strong>'+ '<strong id="strong_apprehension">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/admiration.png"> ' + '<strong>Admiration </strong>'+ '<strong id="strong_admiration">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/confident.png"> ' + '<strong>Confident </strong>'+ '<strong id="strong_confident">' + '</strong>' + '<br>' + '<br>' +
-'<img src="/images/acceptance.png"> ' + '<strong>Acceptance </strong>'+ '<strong id="strong_acceptance">' + '</strong>';
+        div1.innerHTML = ['<img src="/images/excitement.png"><strong> Excitement </strong><strong id="strong_excitement"></strong><br><br><img src="/images/happiness.png"><strong> Happiness </strong><strong id="strong_happiness"></strong><br><br><img src="/images/serenity.png"><strong> Serenity </strong><strong id="strong_serenity"></strong><br><br><img src="/images/alertness.png"><strong> Alertness </strong><strong id="strong_alertness"></strong><br><br><img src="/images/anticipation.png"><strong> Anticipation </strong><strong id="strong_anticipation"></strong><br><br><img src="/images/interest.png"><strong> Interest </strong><strong id="strong_interest"></strong><br><br><img src="/images/anger.png"><strong> Anger </strong><strong id="strong_anger"></strong><br><br><img src="/images/annoyance.png"><strong> Annoyance </strong><strong id="strong_annoyance"></strong><br><br><img src="/images/hasle.png"><strong> Hasle </strong><strong id="strong_hasle"></strong><br><br><img src="/images/abhorrence.png"><strong> Abhorrence </strong><strong id="strong_abhorrence"></strong><br><br><img src="/images/disgust.png"><strong> Disgust </strong><strong id="strong_disgust"></strong><br><br><img src="/images/pain.png"><strong> Pain </strong><strong id="strong_pain"></strong><br><br><img src="/images/boredom.png"><strong> Boredom </strong><strong id="strong_boredom"></strong><br><br><img src="/images/sadness.png"><strong> Sadness </strong><strong id="strong_sadness"></strong><br><br><img src="/images/pensive.png"><strong> Pensive </strong><strong id="strong_pensive"></strong><br><br><img src="/images/amazed.png"><strong> Amazed </strong><strong id="strong_amazed"></strong><br><br><img src="/images/surprised.png"><strong> Surprised </strong><strong id="strong_surprised"></strong><br><br><img src="/images/distracted.png"><strong> Distracted </strong><strong id="strong_distracted"></strong><br><br><img src="/images/terrified.png"><strong> Terrified </strong><strong id="strong_terrified"></strong><br><br><img src="/images/fear.png"><strong> Fear </strong><strong id="strong_fear"></strong><br><br><img src="/images/apprehension.png"><strong> Apprehension </strong><strong id="strong_apprehension"></strong><br><br><img src="/images/admiration.png"><strong> Admiration </strong><strong id="strong_admiration"></strong><br><br><img src="/images/confident.png"><strong> Confident </strong><strong id="strong_confident"></strong><br><br><img src="/images/acceptance.png"><strong> Acceptance </strong><strong id="strong_acceptance"></strong>'].join();
     
         legend.appendChild(div1);
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);

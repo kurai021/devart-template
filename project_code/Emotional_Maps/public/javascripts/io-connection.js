@@ -324,7 +324,7 @@ $(function(){
         
 
         //crea un infowindow con el contenido del tweet
-        var contentString = "<img class='displaypic' src='" + displayPicture + "'><strong>@" + screen_name + "</strong>: " + "<span class='tweetText'>" + tweetText + "</span>";
+        var contentString = "<img class='displaypic' src='" + displayPicture + "'><div id='tweet-div'><strong> @" + screen_name + "</strong>: " + "<span class='tweetText'>" + tweetText + "</span></div>";
         
         tw = document.getElementById("tweets");
         tw.innerHTML = "<div class='tweet'><div class='message'>" + contentString + '</div></div>';

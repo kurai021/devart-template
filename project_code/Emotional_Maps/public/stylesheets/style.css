@@ -17,6 +17,7 @@ body #tweets {
   padding: 10px;
   margin: 5px;
   border: 3px solid #000;
+  border-radius: 10px;
   width: 40vw;
   height: 10vh;
   position: absolute;
@@ -75,7 +76,7 @@ body #legend img {
   vertical-align: middle;
 }
 body #legend #div1 {
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 40vw;
   height: 50vh;
 }
@@ -185,10 +186,9 @@ body #legend #strong_confident {
 body #legend #strong_acceptance {
   color: #a9e942;
 }
-.gm-style-iw {
-  color: #bbb;
-  max-width: 200px;
-}
 .displaypic {
   vertical-align: middle;
+  border-radius: 50%;
+  border: 3px solid #000;
+  float: left;
 }
