@@ -76,7 +76,9 @@ body #legend img {
   vertical-align: middle;
 }
 body #legend #div1 {
+  border: 1px #f2f2f2 solid;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   width: 40vw;
   height: 50vh;
 }
