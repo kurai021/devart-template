@@ -74,5 +74,5 @@ nTwitter: [https://github.com/AvianFlu/ntwitter](https://github.com/AvianFlu/ntw
 
 JQuery: [http://jquery.com/](http://jquery.com/)
 
-## Images & Videos
-![Image](../project_images/final.png?raw=true "Image")
+## Video
+
