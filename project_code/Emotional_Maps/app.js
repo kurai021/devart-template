@@ -45,7 +45,7 @@
 
   io.sockets.on("connection", function(socket) {
     twit.stream("statuses/filter", {
-      track: ["#emotionalmaps","emotionalmaps","excitement","excited","happiness","happy","serenity","serene","calm","alertness","alert","anticipation","anticipate","anticipated","interest","interesting","anger","angry","annoyance","annoyed","annoying","abhorrence","pain","painful","boredom","boring","sadness","sad","pensive","thoughtful","guess","amazed","amazing","surprised","surprise","distracted","distraction","distract","terrified","terrifying","fear","apprehension","apprehensive","admiration","admire","confident","confide","trust","acceptance","accept", "hasle", "discomfort","hate"]
+      track: ["#emotionalmaps","emotionalmaps","excitement","excited","happiness","happy","serenity","serene","calm","calmed","alertness","alert","anticipation","anticipate","anticipated","interest","interesting","anger","angry","annoyance","annoyed","annoying","abhorrence","pain","painful","boredom","boring","sadness","sad","pensive","thoughtful","guess","amaze","amazed","amazing","surprised","surprising","surprise","distracted","distraction","distract","terrified","terrifying","fear","fearing","feared","apprehension","apprehensive","admiration","admire","admiring","confident","confide","trust","acceptance","accept","accepting","hasle","discomfort","hate"]
     }, function(stream) {
       stream.on("data", function(data) {
         if (data.geo !== null && data.lang == 'en') {

@@ -91,7 +91,7 @@ $(function(){
             happiness.innerHTML = counter_happiness;
         }
             
-        if (/serenity/.test(tweetText) || /serene/.test(tweetText) || /calm/.test(tweetText) || /Serenity/.test(tweetText) || /Serene/.test(tweetText) || /Calm/.test(tweetText) || /SERENITY/.test(tweetText) || /SERENE/.test(tweetText) || /CALM/.test(tweetText)){
+        if (/serenity/.test(tweetText) || /serene/.test(tweetText) || /calm/.test(tweetText) || /calmed/.test(tweetText) || /Serenity/.test(tweetText) || /Serene/.test(tweetText) || /Calm/.test(tweetText) || /Calmed/.test(tweetText) || /SERENITY/.test(tweetText) || /SERENE/.test(tweetText) || /CALM/.test(tweetText) || /CALMED/.test(tweetText)){
             var iconFile = '/images/markers/serenity.png';
             marker.setIcon(iconFile)
             
@@ -223,7 +223,7 @@ $(function(){
             pensive.innerHTML = counter_pensive;
         }
         
-        if (/amazed/.test(tweetText) || /amazing/.test(tweetText) || /Amazed/.test(tweetText) || /Amazing/.test(tweetText) || /AMAZED/.test(tweetText) || /AMAZING/.test(tweetText)){
+        if (/amaze/.test(tweetText) || /amazed/.test(tweetText) || /amazing/.test(tweetText) || /Amaze/.test(tweetText) || /Amazed/.test(tweetText) || /Amazing/.test(tweetText) || /AMAZE/.test(tweetText) || /AMAZED/.test(tweetText) || /AMAZING/.test(tweetText)){
             var iconFile = '/images/markers/amazed.png';
             marker.setIcon(iconFile)
             
@@ -234,7 +234,7 @@ $(function(){
             amazed.innerHTML = counter_amazed;
         }
         
-        if (/surprised/.test(tweetText) || /surprise/.test(tweetText) || /Surprised/.test(tweetText) || /Surprise/.test(tweetText) || /SURPRISED/.test(tweetText) || /SURPRISE/.test(tweetText)){
+        if (/surprised/.test(tweetText) || /surprising/.test(tweetText) || /surprise/.test(tweetText) || /Surprised/.test(tweetText) || /Surprise/.test(tweetText) || /surprising/.test(tweetText)  || /SURPRISED/.test(tweetText) || /SURPRISING/.test(tweetText) || /SURPRISE/.test(tweetText)){
             var iconFile = '/images/markers/surprised.png';
             marker.setIcon(iconFile)
             
@@ -267,7 +267,7 @@ $(function(){
             terrified.innerHTML = counter_terrified;
         }
         
-        if (/fear/.test(tweetText) || /Fear/.test(tweetText) || /FEAR/.test(tweetText)){
+        if (/fear/.test(tweetText) || /Fear/.test(tweetText) || /FEAR/.test(tweetText) || /fearing/.test(tweetText) || /Fearing/.test(tweetText) || /FEARING/.test(tweetText) || /feared/.test(tweetText) || /Feared/.test(tweetText) || /FEARED/.test(tweetText)){
             var iconFile = '/images/markers/fear.png';
             marker.setIcon(iconFile)
             
@@ -289,7 +289,7 @@ $(function(){
             apprehension.innerHTML = counter_apprehension;
         }
         
-        if (/admiration/.test(tweetText) || /admire/.test(tweetText) || /Admiration/.test(tweetText) || /Admire/.test(tweetText) || /ADMIRATION/.test(tweetText) || /ADMIRE/.test(tweetText)){
+        if (/admiration/.test(tweetText) || /admire/.test(tweetText) || /admiring/.test(tweetText) || /Admiration/.test(tweetText) || /Admire/.test(tweetText) || /Admiring/.test(tweetText) || /ADMIRATION/.test(tweetText) || /ADMIRE/.test(tweetText) || /ADMIRING/.test(tweetText)){
             var iconFile = '/images/markers/admiration.png';
             marker.setIcon(iconFile)
             
@@ -311,7 +311,7 @@ $(function(){
             confident.innerHTML = counter_confident;
         }
         
-        if (/acceptance/.test(tweetText) || /accept/.test(tweetText) || /Acceptance/.test(tweetText) || /Accept/.test(tweetText) || /ACCEPTANCE/.test(tweetText) || /ACCEPT/.test(tweetText)){
+        if (/acceptance/.test(tweetText) || /accept/.test(tweetText) || /Acceptance/.test(tweetText) || /Accept/.test(tweetText) || /ACCEPTANCE/.test(tweetText) || /ACCEPT/.test(tweetText) || /accepting/.test(tweetText) || /Accepting/.test(tweetText) || /ACCEPTING/.test(tweetText)){
             var iconFile = '/images/markers/acceptance.png';
             marker.setIcon(iconFile)
             
