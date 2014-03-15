@@ -77,4 +77,4 @@ JQuery: [http://jquery.com/](http://jquery.com/)
 ## Video
 this is only a video example (not the project video)
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/30yGOxJJ2PQ?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=30yGOxJJ2PQ
