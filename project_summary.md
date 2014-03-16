@@ -1,7 +1,7 @@
 # Project Title
 Emotional Maps
 
-## Authors
+## Author
 - Richard Armuelles: [Github Account](http://github.com/kurai021 "Github Account")
 
 ## Description
@@ -9,9 +9,6 @@ Emotional Maps is an effort to connect people, strangers with their states of mi
 
 ## Link to Prototype
 [https://emotional-maps.herokuapp.com/](https://emotional-maps.herokuapp.com)
-
-## Key Words
-emotionalmaps,excitement,excited,happiness,happy,serenity,serene,calm,alertness,alert,anticipation,anticipate,anticipated,interest,interesting,anger,angry,annoyance,annoyed,annoying,nuisance,abhorrence,pain,painful,boredom,boring,sadness,sad,pensive,thoughtful,guess,amazed,amazing,surprised,surprise,distracted,distraction,terrified,fear,apprehension",apprehensive,admiration,admire,confident,confide,trust,acceptance,accept,hasle,discomfort,hate.
 
 ## Example Code
 <code>
