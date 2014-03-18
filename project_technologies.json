@@ -10,12 +10,15 @@
             "osx",
             "android",
             "ios",
-            "firefox os"
+            "firefox os",
+            "heroku"
         ],
         "toolkits": [
             "nodejs",
             "express",
-            "stylus"
+            "stylus",
+            "socket.io",
+            "ntwitter"
         ]
     },
     "themes": [
