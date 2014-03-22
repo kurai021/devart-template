@@ -72,6 +72,4 @@ nTwitter: [https://github.com/AvianFlu/ntwitter](https://github.com/AvianFlu/ntw
 JQuery: [http://jquery.com/](http://jquery.com/)
 
 ## Video
-this is only a video example (not the project video)
-
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+https://www.youtube.com/watch?v=MCyNGxjShls
