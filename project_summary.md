@@ -1,5 +1,5 @@
-# Project Title
-Emotional Maps
+## Project Title
+#Emotional Maps
 
 ## Author
 - Richard Armuelles: [Github Account](http://github.com/kurai021 "Github Account")

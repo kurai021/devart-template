@@ -104,7 +104,7 @@ body #legend #div1 {
 }
 @media screen and (min-width: 1024px) {
   body #legend #div1 {
-    width: 15vw;
+    width: 10vw;
   }
 }
 @media screen and (min-width: 1280px) {
