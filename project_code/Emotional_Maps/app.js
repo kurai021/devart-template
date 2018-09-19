@@ -1,6 +1,6 @@
   var express = require("express");
   var path = require("path");
-  var favicon = require('serve-favicon');
+  // var favicon = require('serve-favicon');
   var logger = require('morgan');
   var cookieParser = require('cookie-parser');
   var bodyParser = require('body-parser');
@@ -36,7 +36,7 @@
       stream.on("data", function(data) {
         if (data.geo !== null && data.lang == 'en') {
           console.log('Posted near :' + data.geo.coordinates[0] + ' ' + data.geo.coordinates[1] + ' Tweet: ' + data.text);
-          socket.emit("tweet", data);    
+          socket.emit("tweet", data);
         }
       });
       return stream.on("error", function(data) {
@@ -58,7 +58,7 @@
   app.set("view engine", "jade");
 
   // uncomment after placing your favicon in /public
-  //app.use(favicon(path.join(__dirname, 'public', 'images/icons/favicon.ico')));
+  // app.use(favicon(path.join(__dirname, 'public', 'images/icons/favicon.ico')));
   app.use(logger('dev'));
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({extended: false}));
@@ -73,10 +73,6 @@
     src: __dirname + '/public',
     compile: compile
   }));
-
-  if ("production" === app.get("env")) {
-    app.use(express.errorHandler());
-  }
 
 
 module.exports = {
